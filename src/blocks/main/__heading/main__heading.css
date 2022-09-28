@@ -1,0 +1,17 @@
+.main__heading {
+  width: 753px;
+  font-family: 'Nekst-Black', Arial, sans-serif;
+  font-size: 54px;
+  line-height: 48.6px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .main__heading {
+    width: 279px;
+    font-size: 34px;
+    line-height: 30.6px;
+  }
+}

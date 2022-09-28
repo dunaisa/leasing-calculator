@@ -1,0 +1,11 @@
+.form__field {
+  display: flex;
+  flex-direction: column;
+  width: 427px;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
