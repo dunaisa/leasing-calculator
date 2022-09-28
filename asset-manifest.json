@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/leasing-calculator/static/css/main.0f776b9c.css",
+    "main.css": "/leasing-calculator/static/css/main.0b126d6d.css",
     "main.js": "/leasing-calculator/static/js/main.f6d8a130.js",
     "static/media/Nekst-Black.woff": "/leasing-calculator/static/media/Nekst-Black.f0e2921efcf1112b1749.woff",
     "static/media/Nekst-Black.woff2": "/leasing-calculator/static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
     "static/media/Gilroy-Regular.woff": "/leasing-calculator/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
     "static/media/Gilroy-Regular.woff2": "/leasing-calculator/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
     "index.html": "/leasing-calculator/index.html",
-    "main.0f776b9c.css.map": "/leasing-calculator/static/css/main.0f776b9c.css.map",
+    "main.0b126d6d.css.map": "/leasing-calculator/static/css/main.0b126d6d.css.map",
     "main.f6d8a130.js.map": "/leasing-calculator/static/js/main.f6d8a130.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f776b9c.css",
+    "static/css/main.0b126d6d.css",
     "static/js/main.f6d8a130.js"
   ]
 }
