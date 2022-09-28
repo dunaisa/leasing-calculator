@@ -1,5 +1,6 @@
 import React from 'react';
-import FormInput from './FormInput';
+import FormInputValue from './FormInputValue';
+import FormInputCost from './FormInputCost';
 
 const Form = () => {
 
@@ -7,12 +8,15 @@ const Form = () => {
     <form action="submit" method="post" className="form">
       <fieldset className="form__fieldset">
 
-        <FormInput fieldName="Стоимость автомобиля" />
-        <FormInput fieldName="Первоначальный взнос" />
-        <FormInput fieldName="Срок лизинга" />
+        <FormInputValue className="form__input form__input_value" fieldName="Стоимость автомобиля" />
+        <FormInputValue className="form__input form__input_value" fieldName="Первоначальный взнос" />
+        <FormInputValue className="form__input form__input_value" fieldName="Срок лизинга" />
+
+        <FormInputCost className="form__input form__input_cost" fieldName="Сумма договора лизинга" />
+        <FormInputCost className="form__input form__input_cost" fieldName="Ежемесячный платеж от" />
 
       </fieldset>
-
+      <button>Оставить заявку</button>
     </form>
   );
 }

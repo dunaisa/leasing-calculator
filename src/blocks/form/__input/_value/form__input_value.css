@@ -1,0 +1,10 @@
+.form__input_value {
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-family: 'Nekst-Black', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  color: #575757;
+  background-color: #F3F3F4;
+}
