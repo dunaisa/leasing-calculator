@@ -7,7 +7,10 @@
 @import url(./blocks/main/__heading/main__heading.css);
 
 @import url(./blocks/form/form.css);
+@import url(./blocks/form/__btn/form__btn.css);
 @import url(./blocks/form/__fieldset/form__fieldset.css);
 @import url(./blocks/form/__field/form__field.css);
+@import url(./blocks/form/__field/_type/form__field_type_flex.css);
 @import url(./blocks/form/__input/form__input.css);
 @import url(./blocks/form/__input/_value/form__input_value.css);
+@import url(./blocks/form/__input/_cost/form__input_cost.css);

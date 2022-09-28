@@ -1,0 +1,34 @@
+.form__btn {
+  width: 426px;
+  height: 68px;
+  background-color: #FF9514;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border-radius: 40px;
+  font-family: 'Nekst-Black', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__btn {
+    left: 0;
+    bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form__btn {
+    width: 280px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+}

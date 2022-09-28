@@ -1,13 +1,12 @@
 import React from 'react';
 
-const FormInput = ({ fieldName, className }) => {
+const FormInput = ({ className }) => {
   return (
-    <label className="form__field">
-      {fieldName}
-      <input
-        className={className}
-        type="text" />
-    </label>
+
+    <input
+      className={className}
+      type="text" />
+
   );
 }
 

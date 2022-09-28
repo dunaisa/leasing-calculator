@@ -1,22 +1,21 @@
-.form__input_value {
-  padding: 16px 24px;
+.form__input_cost {
   border-radius: 16px;
   font-family: 'Nekst-Black', Arial, sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 54px;
+  line-height: 48.6px;
   font-weight: 900;
-  background-color: #F3F3F4;
   width: 427px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 1024px) {
-  .form__input_value {
-    width: 100%;
-  }  
+  .form__input_cost {
+    width: 279px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .form__input_value {
+  .form__input_cost {
     font-size: 22px;
     line-height: 20px;
   }

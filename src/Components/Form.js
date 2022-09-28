@@ -16,7 +16,7 @@ const Form = () => {
         <FormInputCost className="form__input form__input_cost" fieldName="Ежемесячный платеж от" />
 
       </fieldset>
-      <button>Оставить заявку</button>
+      <button className="form__btn">Оставить заявку</button>
     </form>
   );
 }
