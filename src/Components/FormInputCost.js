@@ -3,10 +3,11 @@ import FormInput from './FormInput';
 
 const FormInputCost = ({ fieldName, className }) => {
   return (
-    <label className="form__field">
-      {fieldName}
-      <FormInput className={className} fieldName={fieldName} />
-    </label >
+    <div className="form__field">
+      <label className="form__field-name">{fieldName}
+        <input className={className} type="number" />
+      </label>
+    </div>
   );
 }
 

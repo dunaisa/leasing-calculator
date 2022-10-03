@@ -1,13 +1,17 @@
-.form__input {
-  margin-top: 24px;
+ .form__input {
+  margin: 0;
   border: none;
   outline: none;
   box-sizing: border-box;
   color: #575757;
+  overflow: hidden;
+  width: 100%;
+  -moz-appearance: textfield;
 }
 
-@media screen and (max-width: 320px) {
-  .form__input {
-    margin-top: 8px;
-  }
+.form__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

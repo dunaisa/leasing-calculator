@@ -1,0 +1,37 @@
+.form__field-range {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 48px);
+  margin-left: 24px;
+  -webkit-appearance: none;
+  height: 1px;
+  background: #E1E1E1;
+  background-image: linear-gradient(#FF9514, #FF9514);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+.form__field-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #FF9514;
+  cursor: pointer;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.form__field-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #FF9514;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+

@@ -1,5 +1,5 @@
 .main__heading {
-  width: 753px;
+  max-width: 620px;
   font-family: 'Nekst-Black', Arial, sans-serif;
   font-size: 54px;
   line-height: 48.6px;
@@ -10,14 +10,18 @@
 
 @media screen and (max-width: 768px) {
   .main__heading {
-    width: 620px;    
+      font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+  .main__heading {
+    font-size: 34px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .main__heading {
-    width: 279px;
-    font-size: 34px;
     line-height: 30.6px;
   }
 }

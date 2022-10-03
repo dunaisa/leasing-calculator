@@ -7,6 +7,8 @@ const Main = () => {
       <h1 className="main__heading">Рассчитайте стоимость автомобиля в лизинг</h1>
 
       <Form />
+
+
     </div>
   );
 }

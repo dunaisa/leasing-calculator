@@ -1,0 +1,22 @@
+.form__field-icon-box {
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  padding: 16px;
+  background-color: #EBEBEC;
+  font-family: 'Nekst-Black', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #575757;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 595px) {
+  .form__field-icon-box {
+    font-size: 22px;
+    line-height: 20px;
+    padding: 14px;
+    bottom: 5px;
+  }
+}

@@ -9,8 +9,14 @@
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__btn/form__btn.css);
 @import url(./blocks/form/__fieldset/form__fieldset.css);
+@import url(./blocks/form/__field-wrapper/form__field-wrapper.css);
+@import url(./blocks/form/__fieldset-top/form__fieldset-top.css);
+@import url(./blocks/form/__fieldset-down/form__fieldset-down.css);
 @import url(./blocks/form/__field/form__field.css);
-@import url(./blocks/form/__field/_type/form__field_type_flex.css);
+@import url(./blocks/form/__field-range/form__field-range.css);
+@import url(./blocks/form/__field-icon/form__field-icon.css);
+@import url(./blocks/form/__field-icon-box/form__field-icon-box.css);
+@import url(./blocks/form/__field-name/form__field-name.css);
 @import url(./blocks/form/__input/form__input.css);
 @import url(./blocks/form/__input/_value/form__input_value.css);
 @import url(./blocks/form/__input/_cost/form__input_cost.css);

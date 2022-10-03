@@ -4,17 +4,10 @@
   font-size: 54px;
   line-height: 48.6px;
   font-weight: 900;
-  width: 427px;
   padding: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  .form__input_cost {
-    width: 279px;
-  }
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 595px) {
   .form__input_cost {
     font-size: 22px;
     line-height: 20px;

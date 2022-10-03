@@ -1,24 +1,30 @@
-.form__fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
-  grid-gap: 44px 32px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(427px, 1fr));
+  .form__fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+ @media screen and (max-width: 1390px) {
+  .form__fieldset {
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  
-}
-
-@media screen and (max-width: 768px) {
-  
+  .form__fieldset {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .form__fieldset {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-  }  
+  }
 }

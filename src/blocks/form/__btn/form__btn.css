@@ -1,9 +1,8 @@
-.form__btn {
+ .form__btn {
   width: 426px;
-  height: 68px;
   background-color: #FF9514;
   border: none;
-  padding: 0;
+  padding: 14px 0;
   cursor: pointer;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -16,6 +15,17 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: .2s;
+}
+
+.form__btn:hover {
+  background-color: #111111;
+}
+
+@media screen and (max-width: 1390px) {
+  .form__btn {
+    width: 309px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -25,9 +35,14 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 650px) {
   .form__btn {
-    width: 280px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .form__btn {
     font-size: 22px;
     line-height: 20px;
   }
