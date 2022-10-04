@@ -1,16 +1,34 @@
 import React from 'react';
-//import FormInput from './FormInput';
 
-const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName }) => {
+const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, min, max, value, step, onChange, style, iconClassNameInput }) => {
+
   return (
     <div className="form__field">
-      <label className="form__field-name">{fieldName}
-        <div className="form__field-wrapper">
-          <input className={inputClassName} type="number" />
-          <input className="form__field-range" type="range" min="0" max="100" />
-          <span className={iconClassName}>{iconValue}</span>
+      <label className="form__field-name">{fieldName}</label>
+      <div className="form__field-wrapper">
+        <input
+          className={inputClassName}
+          id="rangenumber"
+          type="number"
+          value={value}
+          onChange={onChange}
+          min={min}
+          max={max} />
+        <input
+          className="form__field-range"
+          id="range"
+          type="range"
+          min={min}
+          max={max}
+          defaultValue={value}
+          onChange={onChange}
+          step={step}
+          style={style} />
+        <div className={iconClassName}>
+          <input value={iconValue} className={iconClassNameInput} min={min} max={max} disabled />
         </div>
-      </label >
+
+      </div>
     </div>
   );
 }

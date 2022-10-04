@@ -1,12 +1,19 @@
  .form__input_value {
   padding: 16px 90px 16px 24px;
-  margin-top: 24px;
+  margin: 0;
   border-radius: 16px;
   font-family: 'Nekst-Black', Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 900;
   background-color: #F3F3F4;
+  width: 427px;
+}
+
+@media screen and (max-width: 1390px) {
+  .form__input_value {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 595px) {

@@ -1,12 +1,10 @@
 import React from 'react';
-import FormInput from './FormInput';
 
-const FormInputCost = ({ fieldName, className }) => {
+const FormInputCost = ({ fieldName, className, value }) => {
   return (
     <div className="form__field">
-      <label className="form__field-name">{fieldName}
-        <input className={className} type="number" />
-      </label>
+      <label className="form__field-name">{fieldName}</label>
+      <input className={className} type="number" value={value} disabled />
     </div>
   );
 }

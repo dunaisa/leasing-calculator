@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 7px;
   right: 7px;
-  padding: 16px;
+  padding: 10px;
   background-color: #EBEBEC;
   font-family: 'Nekst-Black', Arial, sans-serif;
   font-size: 20px;
@@ -16,7 +16,7 @@
   .form__field-icon-box {
     font-size: 22px;
     line-height: 20px;
-    padding: 14px;
+    padding: 8px;
     bottom: 5px;
   }
 }
