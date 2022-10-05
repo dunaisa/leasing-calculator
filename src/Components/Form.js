@@ -23,7 +23,11 @@ const Form = () => {
   const handleInitialValueChange = (e) => {
 
     setInitialValue(carCostInput * initialRate / 100)
-    setInitialRate(e.target.value)
+    if (e.target.value > 60) {
+      setInitialRate(60)
+    } else {
+      setInitialRate(e.target.value)
+    }
   }
 
   const [months, setMonths] = useState(60);
