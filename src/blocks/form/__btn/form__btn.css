@@ -22,6 +22,11 @@
   background-color: #111111;
 }
 
+.form__btn:disabled {
+  transition: .2s;
+  background-color: rgba(255, 149, 20, 0.4);
+}
+
 @media screen and (max-width: 1390px) {
   .form__btn {
     width: 309px;

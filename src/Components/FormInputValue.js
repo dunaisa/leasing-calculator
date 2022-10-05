@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, min, max, value, step, onChange, style, iconClassNameInput }) => {
+const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, rangeClassName, min, max, valueInput, valueRange, step, onChange, style, iconClassNameInput, disabled, iconInputDisabled, readOnly, perсentIcon }) => {
 
   return (
     <div className="form__field">
@@ -8,24 +8,26 @@ const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, m
       <div className="form__field-wrapper">
         <input
           className={inputClassName}
-          id="rangenumber"
           type="number"
-          value={value}
+          value={valueInput}
           onChange={onChange}
           min={min}
-          max={max} />
+          max={max}
+          disabled={disabled}
+          readOnly={readOnly} />
         <input
-          className="form__field-range"
+          className={rangeClassName}
           id="range"
           type="range"
           min={min}
           max={max}
-          defaultValue={value}
+          value={valueRange}
           onChange={onChange}
           step={step}
           style={style} />
         <div className={iconClassName}>
-          <input value={iconValue} className={iconClassNameInput} min={min} max={max} disabled />
+          <input value={iconValue} className={iconClassNameInput} onChange={onChange} disabled={iconInputDisabled} />
+          <span className="form__field-icon-perсent">{perсentIcon}</span>
         </div>
 
       </div>

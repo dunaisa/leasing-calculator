@@ -1,5 +1,5 @@
  .form__input_value {
-  padding: 16px 90px 16px 24px;
+  padding: 14px 88px 14px 22px;
   margin: 0;
   border-radius: 16px;
   font-family: 'Nekst-Black', Arial, sans-serif;
@@ -8,6 +8,16 @@
   font-weight: 900;
   background-color: #F3F3F4;
   width: 427px;
+  border: 2px solid #F3F3F4;
+}
+
+.form__input_value:focus {
+  background-color: transparent;
+  border: 2px solid #F3F3F4;
+}
+
+.form__input_value-inactive:disabled {
+  opacity: 40%;
 }
 
 @media screen and (max-width: 1390px) {
