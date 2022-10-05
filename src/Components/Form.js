@@ -25,6 +25,8 @@ const Form = () => {
     setInitialValue(carCostInput * initialRate / 100)
     if (e.target.value > 60) {
       setInitialRate(60)
+    } else if (e.target.value < 1) {
+      setInitialRate(1)
     } else {
       setInitialRate(e.target.value)
     }
