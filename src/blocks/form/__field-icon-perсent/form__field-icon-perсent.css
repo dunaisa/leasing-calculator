@@ -1,6 +1,7 @@
-.form__field-icon-perсent-text {
+.form__field-icon-perсent-text, 
+.form__field-icon-perсent {
   font-family: 'Nekst-Black', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
   font-weight: 900;
   color: #575757;
@@ -12,8 +13,17 @@
   background: transparent;
   text-align: right;
   max-width: 25px;
+  -moz-appearance: textfield;
 }
 
 .form__field-icon-perсent-text:focus {
   opacity: 40%; 
+}
+
+.form__field-icon-perсent-text::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.form__field-icon-perсent-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

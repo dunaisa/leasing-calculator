@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, rangeClassName, min, max, valueInput, valueRange, step, onChange, style, iconClassNameInput, disabled, iconInputDisabled, readOnly, perсentIcon }) => {
+const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, rangeClassName, min, max, valueInput, valueRange, step, onChange, style, iconClassNameInput, disabled, iconInputDisabled, readOnly, IconElement }) => {
 
   return (
     <div className="form__field">
@@ -26,8 +26,14 @@ const FormInputValue = ({ fieldName, inputClassName, iconValue, iconClassName, r
           step={step}
           style={style} />
         <div className={iconClassName}>
-          <input value={iconValue} className={iconClassNameInput} onChange={onChange} disabled={iconInputDisabled} />
-          <span className="form__field-icon-perсent">{perсentIcon}</span>
+          <input type="number"
+            value={iconValue}
+            className={iconClassNameInput}
+            onChange={onChange}
+            disabled={iconInputDisabled}
+            min={min}
+            max={max} />
+          <span className="form__field-icon-perсent">{IconElement}</span>
         </div>
 
       </div>

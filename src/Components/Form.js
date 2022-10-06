@@ -7,13 +7,21 @@ const Form = () => {
 
   const [carCostInput, setCarCostInput] = useState(3300000);
 
+  // const handleCarCostChange = (e) => {
+  //   if (e.target.value > 6000000) {
+  //     setCarCostInput(6000000)
+  //   } else if (e.target.value < 1000000) {
+  //     setCarCostInput(1000000)
+  //   } else {
+  //     setCarCostInput(Number(e.target.value))
+  //   }
+  // }
+
   const handleCarCostChange = (e) => {
     if (e.target.value > 6000000) {
       setCarCostInput(6000000)
-    } else if (e.target.value < 1000000) {
-      setCarCostInput(1000000)
     } else {
-      setCarCostInput(Number(e.target.value))
+      setCarCostInput(Math.max(0, parseInt(e.target.value)))
     }
   }
 
@@ -21,24 +29,31 @@ const Form = () => {
   const [initialValue, setInitialValue] = useState(0);
 
   const handleInitialValueChange = (e) => {
-
     setInitialValue(carCostInput * initialRate / 100)
     if (e.target.value > 60) {
       setInitialRate(60)
     } else if (e.target.value < 1) {
       setInitialRate(1)
     } else {
-      setInitialRate(e.target.value)
+      setInitialRate(Math.max(0, parseInt(e.target.value)))
     }
   }
 
   const [months, setMonths] = useState(60);
 
+  // const handleMonthChange = (e) => {
+  //   if (e.target.value >= 0 && e.target.value <= 60) {
+  //     setMonths(e.target.value)
+  //   } else {
+  //     setMonths(60)
+  //   }
+  // }
+
   const handleMonthChange = (e) => {
-    if (e.target.value >= 0 && e.target.value <= 60) {
-      setMonths(e.target.value)
-    } else {
+    if (e.target.value > 60) {
       setMonths(60)
+    } else {
+      setMonths(Math.max(1, parseInt(e.target.value)))
     }
   }
 
@@ -72,9 +87,7 @@ const Form = () => {
   useEffect(() => {
     const payPerMonth = Math.ceil(((carCostInput - initialValue) * ((0.035 * Math.pow((1 + 0.035), months)) / (Math.pow((1 + 0.035), months) - 1))))
 
-    const abc = carCostInput * initialRate / 100
-
-    setInitialValue(abc)
+    setInitialValue(carCostInput * initialRate / 100)
     setMonthPay(payPerMonth)
     setTotalCost(Math.ceil(initialValue + (months * monthPay)))
 
@@ -94,13 +107,14 @@ const Form = () => {
             iconClassNameInput="form__field-icon-text"
             rangeClassName={activeRangeSlider ? "form__field-range" : "form__field-range-inactive"}
             fieldName="Стоимость автомобиля"
-            iconValue="₽"
+            // iconValue="₽"
+            IconElement="₽"
             min={1000000}
             max={6000000}
             valueInput={carCostInput}
             valueRange={carCostInput}
             onChange={handleCarCostChange}
-            style={{ 'backgroundSize': (carCostInput - 1000000) * 100 / 5000000 + '% 100%' }}
+            style={{ 'backgroundSize': (Number(carCostInput) - 1000000) * 100 / 5000000 + '% 100%' }}
             disabled={disabledInput}
             iconInputDisabled={true} />
 
@@ -119,7 +133,7 @@ const Form = () => {
             onChange={handleInitialValueChange}
             disabled={disabledInput}
             style={{ 'backgroundSize': (Number(initialRate) - 10) * 100 / 50 + '% 100%' }}
-            perсentIcon={'%'}
+            IconElement='%'
           />
 
           <FormInputValue
@@ -127,7 +141,9 @@ const Form = () => {
             iconClassNameInput="form__field-icon-text"
             inputClassName="form__input form__input_value form__input_value-inactive"
             rangeClassName={activeRangeSlider ? "form__field-range" : "form__field-range-inactive"}
-            fieldName="Срок лизинга" iconValue="мес."
+            fieldName="Срок лизинга"
+            // iconValue="мес."
+            IconElement="мес."
             min={1}
             max={60}
             valueInput={months}
